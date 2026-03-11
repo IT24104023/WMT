@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Dilud/Dilud.iml" filepath="$PROJECT_DIR$/Dilud/Dilud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/WMT.iml" filepath="$PROJECT_DIR$/.idea/WMT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Zakee/Zakee.iml" filepath="$PROJECT_DIR$/Zakee/Zakee.iml" />
+    </modules>
+  </component>
+</project>
