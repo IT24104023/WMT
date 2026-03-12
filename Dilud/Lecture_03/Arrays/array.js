@@ -104,3 +104,28 @@ console.log("Removed the first element: " + array1.shift());
 console.log("Removed the last element: " + array1.pop());
 console.log("Array after removing first and last element: " + array1);
 console.log(" ");
+
+// sort = sorts the elements of an array in place and returns the sorted array
+let numbers = [5, 2, 9, 1, 5, 6];
+console.log("Sorted Array: " + numbers.sort());
+
+var months = ["jan","march","april","june","february"];
+console.log("Sorted Months: " + months.sort());
+console.log("");
+months.splice(1,0,"february"); // insert at index 1
+console.log("Months after adding february: " + months);
+months.splice(4,1,"May"); // replace one element at index 4
+console.log("Months after removing june: " + months);
+console.log(" ");
+
+// unshift = adds one or more elements to the beginning of an array and returns the new length of the array
+
+let arr = [1, 2, 3];
+console.log("Original Array: " + arr);
+arr.unshift(5,6);// adds 5 and 6 to the beginning of the array
+console.log("Array after unshift: " + arr);
+console.log(" ");
+
+// valueOf = returns an array of a given object's own enumerable property values
+let obj = ["Banana", "Orange","Apple", "Mango"];
+console.log("Values of the object: " + obj.valueOf()); // returns the array itself
