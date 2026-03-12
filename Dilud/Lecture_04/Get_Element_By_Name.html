@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>User Name</h3>
+<form >
+    <input type="text" name="username" id="user1" placeholder="Enter username">
+    <input type="text" name="username" id="user2" placeholder="Re-enter username">
+</form>
+ <button onclick="showname()">Show</button>
+<p id="output"></p>
+
+<hr>
+
+<h3>Select Gender</h3>
+
+
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <br><br>
+
+    <button onclick="showGender()">Show Gender</button>
+
+    <p id="result"></p>
+
+<script>
+    function showname(){
+        let inputs = document.getElementsByName("username");
+        let user1 = document.getElementById("user1").value;
+        let user2 = document.getElementById("user2").value
+        
+        if(user1 === user2){
+        document.getElementById("output").textContent = inputs[0].value;
+        }else {
+             document.getElementById("output").textContent = 'The two names isnt matching'
+        }
+    }
+
+    function showGender(){
+        let gender = document.getElementsByName("gender");
+
+        for(let i = 0; i<gender.length; i++){
+            if(gender[i].checked){
+            document.getElementById("result").textContent = "Selected: " +gender[i].value;
+            }
+        }
+    }
+
+</script>
+
+
+    
+</body>
+</html>
