@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h3>Choose a course</h3>
+
+<div class="course">Web Development</div>
+<div class="course">Mobile App Development</div>
+<div class="course">Data Science</div>
+
+<button onkeydown="hightLight()">onKeydown</button>
+<button onkeypress="hightLight1()">onKeypress</button>
+<button onkeyup="hightLight2()">onKeyup</button>
+
+<style>
+    .course{
+        padding: 10px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+    }
+
+    .active{
+        background-color: aqua;
+        font-weight: bold;
+    }
+     .active1{
+        background-color: red;
+        font-weight: bold;
+    }
+     .active2{
+        background-color: blue;
+        font-weight: bold;
+    }
+
+</style>
+
+<script>
+    function hightLight(){
+        let courses = document.getElementsByClassName("course");
+
+        for(let i = 0; i < courses.length; i++){
+            courses[i].classList.add("active");
+        }
+
+    }
+     function hightLight1(){
+        let courses = document.getElementsByClassName("course");
+
+        for(let i = 0; i < courses.length; i++){
+            courses[i].classList.add("active1");
+        }
+
+    }
+
+     function hightLight2(){
+        let courses = document.getElementsByClassName("course");
+
+        for(let i = 0; i < courses.length; i++){
+            courses[i].classList.add("active2");
+        }
+
+    }
+
+
+</script>
+
+    
+</body>
+</html>
